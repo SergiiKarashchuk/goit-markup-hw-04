@@ -64,6 +64,26 @@ body {
 .contacts.list {
   display: flex;
 }
+.contacts-list.elements {
+  display: flex;
+}
+
+.contacts.list button {
+  display: block;
+  padding: 0;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: #ffffff;
+
+}
+
+.contacts.list button:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+
+}
 
 .section-address a:hover {
   color: #2196f3;
@@ -163,9 +183,20 @@ body {
 /* потім прибрати фон */
 
 .hero {
-  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  display: block;
+  
 }
 
 .hero-title {
@@ -215,6 +246,9 @@ body {
   margin: -1px;
 }
 
+
+
+
 .benefits.list .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -240,7 +274,34 @@ body {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
+
 }
+
+.benefits.list button {
+width: 270px;
+height: 120px;
+display: block;
+border: none;
+margin: 0;
+padding: 0;
+background-color: #F5F4FA;
+margin-bottom: 10px;
+border-radius: 4px;
+background-position: 50%, 50%;
+
+}
+
+.button-benefits {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  padding: 0;
+  justify-items: center;
+  align-items: center;
+
+}
+
 
 .benefits.list li {
   width: 270px;
@@ -362,6 +423,37 @@ ul.heands.list {
   letter-spacing: 0.03em;
 }
 
+
+
+
+.social-icon .heands-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  gap: 10px; 
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  border-radius: 50%
+}
+
+.social-icon > svg:hover {
+color: var(--accent-color);
+cursor: pointer;
+background-color: var(--accent-color);
+}
+
+
+.social-icon {
+  display: flex;
+  padding: 0;
+  margin-top: 16px;
+  gap: 10px; 
+  justify-content: center;
+}
+
+
+
 /* Футер */
 
 .section-footer {
@@ -390,6 +482,7 @@ ul.heands.list {
 .section-address ul {
   margin: 0px;
   padding: 0px;
+  padding-right: 70px;
 }
 
 .section-footer {
@@ -397,6 +490,7 @@ ul.heands.list {
 }
 
 .container-footer {
+
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -416,4 +510,43 @@ ul.heands.list {
 
 .section-address li:not(:last-child) {
   margin-bottom: 9px;
+  
+}
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.fotter-icon-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1,14;
+letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+}
+
+.social-icon-list {
+display: flex;
+list-style: none;
+gap: 10px;
+padding: 0;
+margin: 0;
+}
+
+.social-icon-item svg:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.social-icon-list .fotter-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 
 }
