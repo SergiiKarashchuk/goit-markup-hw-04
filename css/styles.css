@@ -64,23 +64,33 @@ body {
 .contacts.list {
   display: flex;
 }
-.contacts-list.elements {
+
+.contacts-link {
   display: flex;
+  margin: 0;
+  padding: 0;
+  
 }
 
-.contacts.list button {
-  display: block;
-  padding: 0;
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon {
+  display: flex;
   margin-right: 10px;
   width: 16px;
   height: 16px;
   border: none;
   background-color: #ffffff;
 
+
 }
 
-.contacts.list button:hover {
-  color: var(--accent-color);
+.contacts-icon:hover {
+  fill: none;
+  stroke: var(--accent-color);
   cursor: pointer;
 
 }
@@ -426,21 +436,16 @@ ul.heands.list {
 
 
 
-.social-icon .heands-icon {
-  display: block;
+.heands-icon {
+ display: flex;
   width: 44px;
   height: 44px;
   gap: 10px; 
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-  border-radius: 50%
-}
+  background-color: #188ce8;
+  border-radius: 50%;
 
-.social-icon > svg:hover {
-color: var(--accent-color);
-cursor: pointer;
-background-color: var(--accent-color);
+  fill: #AFB1B8;
+gap: 10px;
 }
 
 
@@ -448,9 +453,11 @@ background-color: var(--accent-color);
   display: flex;
   padding: 0;
   margin-top: 16px;
-  gap: 10px; 
-  justify-content: center;
+  gap: 10px;
+  
 }
+
+
 
 
 
@@ -531,22 +538,29 @@ letter-spacing: 0.03em;
 
 }
 
-.social-icon-list {
-display: flex;
-list-style: none;
-gap: 10px;
-padding: 0;
-margin: 0;
+.fotter-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+fill: #FFFFFF;
 }
 
-.social-icon-item svg:hover {
+.fotter-icon:hover {
   color: var(--accent-color);
   cursor: pointer;
 }
 
-.social-icon-list .fotter-icon {
-  display: block;
+
+.fotter-link {
+  display: flex;
   width: 44px;
   height: 44px;
-  border-radius: 50% 
+  border-radius: 50%;
+  background-color: #188ce8;
+ 
+  
+}
+.futter-socials.list {
+  display: inline-flex;
+  gap: 10px;
 }
