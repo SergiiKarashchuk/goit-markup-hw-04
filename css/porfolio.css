@@ -60,7 +60,6 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
-  
 }
 
 .contacts-item {
@@ -75,15 +74,12 @@ img {
   height: 16px;
   border: none;
   background-color: #ffffff;
-
-
 }
 
 .contacts-icon:hover {
   fill: none;
   stroke: var(--accent-color);
   cursor: pointer;
-
 }
 
 .section-address a:hover {
@@ -172,8 +168,8 @@ img {
 .contacts a:focus {
   color: var(--accent-color);
 }
-  
-  /* header end */
+
+/* header end */
 
 /* <!-- Кнопки фільтра --> */
 
@@ -226,7 +222,6 @@ img {
   margin-top: 94px;
   margin-bottom: 50px;
 }
-
 
 /* Проєкти */
 
@@ -284,7 +279,6 @@ img {
   padding-bottom: 60px;
 }
 
-
 .section-address .item {
   color: #ffffff;
   font-style: normal;
@@ -313,7 +307,6 @@ img {
 }
 
 .container-footer {
-
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -333,7 +326,6 @@ img {
 
 .section-address li:not(:last-child) {
   margin-bottom: 9px;
-  
 }
 
 .container-footer {
@@ -345,30 +337,27 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1,14;
-letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 20px;
-
 }
 
 .footer-icon {
-fill: #FFFFFF;
+  fill: #ffffff;
 }
-
 
 .footer-socials.list {
   display: flex;
   gap: 10px;
 }
 
-
 .footer-link {
- width: 44px;
- height: 44px;
- background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   border-radius: 50%;
   justify-content: center;
