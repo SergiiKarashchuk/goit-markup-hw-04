@@ -441,13 +441,18 @@ ul.heands.list {
   width: 44px;
   height: 44px;
   gap: 10px; 
-  background-color: #188ce8;
   border-radius: 50%;
 
   fill: #AFB1B8;
 gap: 10px;
 }
 
+.heands-icon:hover {
+  fill: none;
+stroke: #ffffff;
+background-color: var(--accent-color);
+cursor: pointer;
+}
 
 .social-icon {
   display: flex;
@@ -543,18 +548,26 @@ letter-spacing: 0.03em;
   width: 44px;
   height: 44px;
 fill: #FFFFFF;
+justify-content: center;
+  align-items: center;
 }
 
 .fotter-icon:hover {
-  color: var(--accent-color);
+  fill: none;
+  stroke: var(--accent-color);
   cursor: pointer;
+}
+
+.futter.item {
+display: flex;  
+width: 44px;
+height: 44px;
+
 }
 
 
 .fotter-link {
   display: flex;
-  width: 44px;
-  height: 44px;
   border-radius: 50%;
   background-color: #188ce8;
  
