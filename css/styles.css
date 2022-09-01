@@ -544,12 +544,9 @@ letter-spacing: 0.03em;
 }
 
 .fotter-icon {
-  display: flex;
   width: 44px;
   height: 44px;
 fill: #FFFFFF;
-justify-content: center;
-  align-items: center;
 }
 
 .fotter-icon:hover {
@@ -570,10 +567,12 @@ height: 44px;
   display: flex;
   border-radius: 50%;
   background-color: #188ce8;
+  justify-content: center;
+  align-items: center;
  
   
 }
 .futter-socials.list {
-  display: inline-flex;
+  display: flex;
   gap: 10px;
 }
