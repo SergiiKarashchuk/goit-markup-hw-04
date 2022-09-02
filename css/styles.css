@@ -29,6 +29,10 @@ body {
 
 /* header start */
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .container-header {
   display: flex;
   justify-content: space-between;
@@ -85,14 +89,10 @@ body {
   background-color: #ffffff;
 }
 
-.contacts-icon:hover {
-  fill: none;
-  stroke: var(--accent-color);
-  cursor: pointer;
-}
-
-.section-address a:hover {
+.section-address a:hover,
+.section-address a:focus {
   color: #2196f3;
+  cursor: pointer;
 }
 
 .section-address ul {
@@ -149,6 +149,7 @@ body {
   display: inline-block;
 }
 .contacts a {
+  display: flex;
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -157,7 +158,6 @@ body {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: inline-block;
 }
 
 .site-nav a:hover,
@@ -173,9 +173,11 @@ body {
   margin-right: 50px;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contacts.list a:hover,
+.contacts.list a:focus {
+  fill: var(--accent-color);
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* header end */
@@ -226,6 +228,8 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  width: 216px;
+  height: 50px;
 
   border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -404,6 +408,10 @@ ul.heands.list {
   margin-top: 0px;
 }
 
+.section-title {
+  text-align: center;
+}
+
 .position {
   display: inline-block;
   color: var(--primery-text-color);
@@ -414,6 +422,10 @@ ul.heands.list {
   margin-bottom: 16px;
 }
 
+.position-item {
+  text-align: center;
+}
+
 .socials-list {
   display: flex;
   padding: 0;
@@ -421,8 +433,7 @@ ul.heands.list {
   list-style: none;
 }
 
-.socials-icon {
-  display: flex;
+.socials-link {
   fill: #afb1b8;
 }
 
@@ -438,15 +449,11 @@ ul.heands.list {
 
 .socials-link:hover,
 .socials-link:focus {
-  background-color: #188ce8;
-}
-.socials-icon:hover,
-.socials-icon:focus {
   fill: #ffffff;
+  background-color: var(--accent-color);
 }
 
 /* Клієнти */
-
 
 .container-clients {
   width: 1200px;
@@ -471,52 +478,39 @@ h2 {
 }
 
 .clients-list {
-display: flex;
-list-style: none;
-justify-content: center;
-gap: 30px;
-margin: 0;
-padding: 0;
-padding-bottom: 94px;
-
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 94px;
 }
-
 
 .clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #afb1b8;
 
   width: 170px;
   height: 92px;
 
-
-border: 1px solid #AFB1B8;
-border-radius: 4px;
-
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .clients-icon {
-display: flex;
-fill: #AFB1B8;
+  display: flex;
+ 
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-fill: var(--accent-color);
-}
 
 .clients-link:hover,
 .clients-link:focus {
-border-color: var(--accent-color);
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
-
-
-
-
-
-
-
 
 /* Футер */
 
@@ -611,6 +605,8 @@ border-color: var(--accent-color);
   align-items: center;
 }
 
-.footer-link.twitter {
+.footer-link:hover,
+.footer-link:focus {
+  fill: #ffffff;
   background-color: var(--accent-color);
 }

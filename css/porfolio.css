@@ -20,6 +20,10 @@ img {
 }
 /* header start */
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .container-header {
   display: flex;
   justify-content: space-between;
@@ -76,14 +80,10 @@ img {
   background-color: #ffffff;
 }
 
-.contacts-icon:hover {
-  fill: none;
-  stroke: var(--accent-color);
-  cursor: pointer;
-}
-
-.section-address a:hover {
+.section-address a:hover,
+.section-address a:focus {
   color: #2196f3;
+  cursor: pointer;
 }
 
 .section-address ul {
@@ -140,6 +140,7 @@ img {
   display: inline-block;
 }
 .contacts a {
+  display: flex;
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -148,7 +149,6 @@ img {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: inline-block;
 }
 
 .site-nav a:hover,
@@ -164,9 +164,11 @@ img {
   margin-right: 50px;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contacts.list a:hover,
+.contacts.list a:focus {
+  fill: var(--accent-color);
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* header end */
@@ -271,6 +273,17 @@ img {
   border: 1px solid #eeeeee;
 }
 
+.card {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.item-projects:hover,
+.item-projects:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* Футер */
 
 .section-footer {
@@ -364,6 +377,8 @@ img {
   align-items: center;
 }
 
-.footer-link.twitter {
+.footer-link:hover,
+.footer-link:focus {
+  fill: #ffffff;
   background-color: var(--accent-color);
 }
